@@ -3,6 +3,17 @@
 server {
 
     listen       80;
+    server_name  mammadsh.ir;
+
+    location / {
+      root   /usr/share/nginx/html;
+      index  index.html index.htm;
+    }
+}
+
+server {
+
+    listen       80;
     server_name  3.250.43.186;
 
     location / {
