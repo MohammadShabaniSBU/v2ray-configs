@@ -1,0 +1,1 @@
+trojan://user2pass@mammadsh.ir:443?path=%2Ftrojan&security=tls&type=ws#user2

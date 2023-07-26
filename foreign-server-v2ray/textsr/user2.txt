@@ -1,0 +1,1 @@
+trojan://user2pass@mammadsh.ir:443?allowInsecure=1&tfo=1&plugin=obfs-local;obfs=websocket;obfs-host=;obfs-uri=/trojan#user2
