@@ -26,7 +26,7 @@
   },
   "inbounds": [
     {
-      "port": TROJANPORT,
+      "port": 7000,
       "listen":"0.0.0.0",
       "protocol": "trojan",
       "settings": {
@@ -54,7 +54,7 @@
     },
     {
       "listen": "0.0.0.0",
-      "port": DOKODEMOPORT,
+      "port": 8000,
       "protocol": "dokodemo-door",
       "settings": {
           "address": "0.0.0.0"

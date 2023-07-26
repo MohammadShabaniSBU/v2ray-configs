@@ -1,9 +1,9 @@
 server {
     listen 80;
-    server_name ;
+    server_name mammadsh.ir;
 
     location / {
-        return 301 https://FOREIGNDOMAIN$request_uri;
+        return 301 https://mammadsh.ir$request_uri;
     }
 
     location /.well-known/acme-challenge/ {
@@ -13,10 +13,10 @@ server {
 
 server {
     listen 443 ssl http2;
-    server_name FOREIGNDOMAIN;
+    server_name mammadsh.ir;
 
-    ssl_certificate /etc/letsencrypt/live/FOREIGNDOMAIN/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/FOREIGNDOMAIN/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/mammadsh.ir/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/mammadsh.ir/privkey.pem;
 
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
@@ -28,7 +28,7 @@ server {
 
     location /trojan {
 	proxy_redirect off;
-	proxy_pass http://host.docker.internal:TROJANPORT;
+	proxy_pass http://host.docker.internal:7000;
 	proxy_http_version 1.1;
 	proxy_set_header Upgrade $http_upgrade;
 	proxy_set_header Connection "upgrade";

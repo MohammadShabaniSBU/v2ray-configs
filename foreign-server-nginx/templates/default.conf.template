@@ -3,8 +3,7 @@
 server {
 
     listen       80;
-    server_name  FOREIGNIP;
-
+    server_name  3.250.43.186;
 
     location / {
       root   /usr/share/nginx/html;

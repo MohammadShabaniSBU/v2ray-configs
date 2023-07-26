@@ -9,7 +9,7 @@ import qrcode
 import json
 
 
-domain = 'FOREIGNDOMAIN'
+domain = 'mammadsh.ir'
 port = 443
 path = '/trojan'
 security = 'tls'

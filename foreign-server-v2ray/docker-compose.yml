@@ -8,8 +8,8 @@ services:
     environment:
       - v2ray.vmess.aead.forced=false
     ports:
-      - "TROJANPORT:TROJANPORT"
-      - "DOKODEMOPORT:DOKODEMOPORT"
+      - "7000:7000"
+      - "8000:8000"
     volumes:
       - ./config.json:/etc/v2ray/config.json
     command: "run -config=/etc/v2ray/config.json"

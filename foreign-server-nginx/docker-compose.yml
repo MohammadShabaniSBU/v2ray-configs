@@ -14,14 +14,15 @@ services:
       - ./certbot/www:/var/www/certbot
     extra_hosts:
       - "host.docker.internal:host-gateway"
+
   certbot:
     image: certbot/certbot
     depends_on:
       - nginx
     command: >-
              certonly --reinstall --webroot --webroot-path=/var/www/certbot
-             --email YOUREMAIL --agree-tos --no-eff-email
-             -d FOREIGNDOMAIN
+             --email mohamad.darghah@gmail.com --agree-tos --no-eff-email
+             -d mammadsh.ir
     volumes:
       - ./certbot/conf:/etc/letsencrypt
       - ./certbot/www:/var/www/certbot

@@ -8,7 +8,7 @@ import json
 import re
 
 server = "127.0.0.1"
-port = DOKODEMOPORT
+port = 8000
 filename = "/srv/v2fly/usage.json"
 
 v2ctl = "/usr/bin/v2ctl"
